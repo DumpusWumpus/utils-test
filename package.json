@@ -1,0 +1,28 @@
+{
+	"name": "@dumpuswumpus/utils-test",
+	"version": "1.0.0",
+	"description": "Just a test repo to learn npm",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"prebuild": "rimraf dist",
+		"build": "tsc"
+	},
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"import": "./dist/index.js"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"author": "dumpuswumpus",
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"private": false,
+	"devDependencies": {
+		"rimraf": "^5.0.0",
+		"typescript": "^5.0.4"
+	}
+}
