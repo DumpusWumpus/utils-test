@@ -1,6 +1,6 @@
 {
 	"name": "@dumpuswumpus/utils-test",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Just a test repo to learn npm",
 	"author": "dumpuswumpus",
 	"license": "MIT",
@@ -9,12 +9,14 @@
 	"scripts": {
 		"prebuild": "rimraf dist",
 		"build": "tsc",
+		"prepublishOnly": "yarn run build",
 		"lint": "eslint . --ext .ts,.js,.json"
 	},
 	"exports": {
 		"types": "./dist/index.d.ts",
 		"import": "./dist/index.js"
 	},
+	"files": ["dist"],
 	"engines": {
 		"node": ">=18"
 	},
