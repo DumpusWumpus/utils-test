@@ -6,7 +6,8 @@
 	"type": "module",
 	"scripts": {
 		"prebuild": "rimraf dist",
-		"build": "tsc"
+		"build": "tsc",
+		"lint": "eslint . --ext .ts,.js,.json"
 	},
 	"exports": {
 		"types": "./dist/index.d.ts",
@@ -22,6 +23,7 @@
 	},
 	"private": false,
 	"devDependencies": {
+		"@dumpuswumpus/eslint-config": "^1.0.0",
 		"rimraf": "^5.0.0",
 		"typescript": "^5.0.4"
 	}
